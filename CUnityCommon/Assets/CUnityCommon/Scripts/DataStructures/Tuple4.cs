@@ -8,7 +8,7 @@
 
 using System;
 
-namespace Eppy
+namespace CUnity.Common.DataStructures
 {
     /// <summary>
     /// Represents a functional tuple that can be used to store

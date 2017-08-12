@@ -8,7 +8,7 @@
 
 using System;
 
-namespace Eppy
+namespace CUnity.Common.DataStructures
 {
     /// <summary>
     /// Utility class that simplifies cration of tuples by using
