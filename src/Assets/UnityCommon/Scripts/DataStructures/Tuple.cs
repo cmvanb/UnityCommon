@@ -8,7 +8,7 @@
 
 using System;
 
-namespace CUnity.Common.DataStructures
+namespace AltSrc.UnityCommon.DataStructures
 {
     /// <summary>
     /// Utility class that simplifies cration of tuples by using

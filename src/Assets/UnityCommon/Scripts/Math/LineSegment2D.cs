@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CUnity.Common.Math
+namespace AltSrc.UnityCommon.Math
 {
     public struct LineSegment2D
     {

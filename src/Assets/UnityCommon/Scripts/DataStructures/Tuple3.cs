@@ -8,7 +8,7 @@
 
 using System;
 
-namespace CUnity.Common.DataStructures
+namespace AltSrc.UnityCommon.DataStructures
 {
     /// <summary>
     /// Represents a functional tuple that can be used to store
