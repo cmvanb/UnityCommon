@@ -1,6 +1,6 @@
-CUnityCommon/[Ll]ibrary/
-CUnityCommon/[Tt]emp/
-CUnityCommon/[Oo]bj/
+src/[Ll]ibrary/
+src/[Tt]emp/
+src/[Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 
