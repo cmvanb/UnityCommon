@@ -22,12 +22,12 @@ namespace AltSrc.UnityCommon.DataStructures
         /// <summary>
         ///   Retrieves the line segments from the quad tree and passes them to the view object.
         /// </summary>
-        public static QuadTreeView Build<T>(QuadTree<T> quadTree) where T : IBounds
+        public static QuadTreeView Build<T>(QuadTree<T> model) where T : IBounds
         {
             GameObject viewObject = new GameObject("QuadTreeView");
 
             QuadTreeView view = viewObject.AddComponent<QuadTreeView>();
-            view.LineSegments = quadTree.GetLineSegments();
+            view.LineSegments = model.GetLineSegments();
 
             return view;
         }
