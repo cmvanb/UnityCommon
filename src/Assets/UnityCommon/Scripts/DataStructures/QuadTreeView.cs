@@ -9,19 +9,6 @@ namespace AltSrc.UnityCommon.DataStructures
         public List<LineSegment2D> LineSegments = new List<LineSegment2D>();
 
         /// <summary>
-        ///   Retrieves the line segments from the quad tree and passes them to the view object.
-        /// </summary>
-        public static GameObject Build<T>(QuadTree<T> quadTree) where T : IBounds
-        {
-            GameObject viewObject = new GameObject("QuadTreeView");
-
-            QuadTreeView viewComponent = viewObject.AddComponent<QuadTreeView>();
-            viewComponent.LineSegments = quadTree.GetLineSegments();
-
-            return viewObject;
-        }
-
-        /// <summary>
         ///   Draw each line segment in the scene view.
         /// </summary>
         public void Update()
@@ -30,6 +17,19 @@ namespace AltSrc.UnityCommon.DataStructures
             {
                 Debug.DrawLine(segment.PointA.ToVec3XZ(), segment.PointB.ToVec3XZ(), Color.cyan);
             }
+        }
+
+        /// <summary>
+        ///   Retrieves the line segments from the quad tree and passes them to the view object.
+        /// </summary>
+        public static QuadTreeView Build<T>(QuadTree<T> quadTree) where T : IBounds
+        {
+            GameObject viewObject = new GameObject("QuadTreeView");
+
+            QuadTreeView view = viewObject.AddComponent<QuadTreeView>();
+            view.LineSegments = quadTree.GetLineSegments();
+
+            return view;
         }
     }
 }
